@@ -27,25 +27,33 @@ package Day07;
 public class Operators02_Practice02 {
     public static void main(String[] args) {
         int num1 = 10, num2 = 20, num3 = 4, num4 = 13, num5 = 4;
-        boolean result;
+        // boolean result;
     
-        result = num1 == num2;
-        System.out.println("num1 == num2 : " + result);
+        // result = num1 == num2;
+        // System.out.println("num1 == num2 : " + result);
 
-        result = num4 != num1;
-        System.out.println("num4 != num1 : " + result);
+        // result = num4 != num1;
+        // System.out.println("num4 != num1 : " + result);
 
-        result = num4 > num2;
-        System.out.println("num4 > num2 : " + result);
+        // result = num4 > num2;
+        // System.out.println("num4 > num2 : " + result);
 
-        result = num5 >= num3;
-        System.out.println("num5 >= num3 : " + result);
+        // result = num5 >= num3;
+        // System.out.println("num5 >= num3 : " + result);
 
-        result = num1 < num4;
-        System.out.println("num1 < num4 : " + result);
+        // result = num1 < num4;
+        // System.out.println("num1 < num4 : " + result);
 
-        result = num3 <= num1;
-        System.out.println("num3 <= num1 : " + result);
+        // result = num3 <= num1;
+        // System.out.println("num3 <= num1 : " + result);
+
+        System.out.println("num1 == num2 : " + (num1 == num2));
+        System.out.println("num4 != num1 : " + (num4 != num1));
+        System.out.println("num4 > num2 : " + (num4 > num2));
+        System.out.println("num5 >= num3 : " + (num5 >= num3));
+        System.out.println("num1 < num4 : " + (num1 < num4));
+        System.out.println("num3 <= num1 : " + (num3 <= num1));
+
     }
 }
 
