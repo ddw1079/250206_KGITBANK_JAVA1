@@ -23,6 +23,7 @@ package Day08;
 
 
 public class Operators03 {
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         int n1 = 1, n2 = 2, n3 = 3, n4 = 4;
         System.out.println("n1 == n1 && n2 == n2: " + (n1==n1 && n2==n2));
@@ -40,7 +41,8 @@ public class Operators03 {
         System.out.println("false || n3++ == --n4: " + (false || n3++ == --n4));
         System.out.printf("n3: %d n4: %d\n", n3, n4);
 
-
+        System.out.println((n1 == (n1 = n2)) + " : " + n1 + " : " + n2);
+        System.out.println(((n3 = n4) == n3) + " : " + n3 + " : " + n4);
 
 
     }

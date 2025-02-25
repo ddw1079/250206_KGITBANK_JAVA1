@@ -18,7 +18,7 @@ public class Casting {
         System.out.println("int + double 연산 결과: ");
         System.out.println(3 + 5.3);
         System.out.println("int + (int)double 연산 결과 2: ");
-        System.out.println(3 + (int) 5.3);
+        System.out.println(3 + (int) 5.9);
 
         // 심화: int 극한 + double 극한
         System.out.println("int + double 연산 결과: ");
