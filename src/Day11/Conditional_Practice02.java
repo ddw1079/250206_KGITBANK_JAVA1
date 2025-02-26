@@ -22,6 +22,7 @@ public class Conditional_Practice02 {
         math = sc.nextInt();
         System.out.print("영어 점수: ");
         eng = sc.nextInt();
+        // avg = (double)(kor + math + eng)/3;
         avg = (kor + math + eng)/3.0;
 
         if (avg >= 90) {
