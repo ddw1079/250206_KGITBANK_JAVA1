@@ -7,7 +7,7 @@ public class Conditional02_Practice02 {
         Scanner sc = new Scanner(System.in);
         int kor, math, eng;
         double avg;
-        String grade;
+        String grade="F";
 
         System.out.println("---- 등급 출력기 ---- ");
         System.out.println("점수를 입력하세요. ");
@@ -19,38 +19,31 @@ public class Conditional02_Practice02 {
         eng = sc.nextInt();
         // avg = (double)(kor + math + eng)/3;
         avg = (kor + math + eng) / 3.0;
-
-        switch ((int) (avg / 10)) {
-            case 10:
+        switch ((int) ((avg - 100) / Math.abs(avg - 100))) { // <-- avg 값이 100을 넘어가는지 체크.
+            case -1, 0:
+                switch ((int) (avg / 10)) {
+                    case 10, 9:
+                        grade = "A";
+                        break;
+                    case 8:
+                        grade = "B";
+                        break;
+                    case 7:
+                        grade = "C";
+                        break;
+                    case 6:
+                        grade = "D";
+                        break;
+                    default:
+                        grade = "F";
+                        break;
+                }
+                break;
+            case 1:
                 grade = "A";
-                break;
-            case 9:
-                grade = "A";
-                break;
-            case 8:
-                grade = "B";
-                break;
-            case 7:
-                grade = "C";
-                break;
-            case 6:
-                grade = "D";
-                break;
             default:
-                grade = "F";
                 break;
         }
-        // if (avg >= 90) {
-        // grade = "A";
-        // } else if (avg >= 80) {
-        // grade = "B";
-        // } else if (avg >= 70) {
-        // grade = "C";
-        // } else if (avg >= 60) {
-        // grade = "D";
-        // } else {
-        // grade = "F";
-        // }
 
         System.out.println();
         System.out.printf("점수 평균: %.2f\n", avg);

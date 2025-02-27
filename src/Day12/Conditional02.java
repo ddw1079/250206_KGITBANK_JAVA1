@@ -19,6 +19,9 @@ import java.util.Scanner;
 // - switch ~ case 에는 실수 및 boolean(true|false) 값을 넣지 못함. 
 //   각 case에 작성되는 값은 반드시 상수로 작성해주어야 한다.
 // 
+// - if ~ else 가 else if 조건을 모두 확인하는 반면, switch ~ case 는 비교 값만 확인하여 넘어가기 때문에
+//   코드 실행 속도가 확연히 빨라짐.
+// 
 // 
 
 public class Conditional02 {
