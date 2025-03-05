@@ -34,21 +34,20 @@ public class Loop02_Practice {
                 i++;
             }
         }
-        
-        System.out.println();
 
+        System.out.println();
 
         int j = 0;
         while (j != 9) {
             System.out.print("숫자 입력: ");
             j = sc.nextInt();
-            if (j==9) {
+            if (j == 9) {
+                System.out.print("9가 입력되어 종료합니다.");
                 continue;
                 // break;
             }
             System.out.print("출력: " + j + "\n\n");
         }
-        System.out.print("9가 입력되어 종료합니다.");
         sc.close();
     }
 }
